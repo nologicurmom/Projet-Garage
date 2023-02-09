@@ -3,8 +3,10 @@
     Created on : 18 janv. 2023, 21:08:53
     Author     : TERRAQUE
 --%>
+<%@page import="java.util.List"%>
 <%
   int id_employe = Integer.parseInt(request.getAttribute("id_employe").toString());
+    List<Object[]> listEmploye = (List<Object[]>) request.getAttribute("listEmploye");
 %>
 <%-- 
     Document   : service
@@ -62,8 +64,9 @@
                       <div class="input-group has-validation">
                        <select name="Employer" class="form-select" required id="Employer" >
                        <option value="">Employer</option>
-                       <option value="7">Tojoniaina</option>
-                       <option value="8">Hardi</option>
+                         <% for(int i=0;i<listEmploye.size();i++) { %>
+                         <option value="<%=  listEmploye.get(i)[0] %>"><%= listEmploye.get(i)[1] %> <%= listEmploye.get(i)[2] %></option>
+                       <% } %>
               </select>
                         <div class="invalid-feedback">Entrer un Employer</div>
                       </div>

@@ -96,6 +96,58 @@
         <servlet-name>ChoixMateriel</servlet-name>
         <servlet-class>Servlets.ChoixMateriel</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Trait_Service</servlet-name>
+        <servlet-class>Servlets.Trait_Service</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Facture_Service</servlet-name>
+        <servlet-class>Servlets.Facture_Service</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Situation</servlet-name>
+        <servlet-class>Servlets.Situation</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SituationFacture</servlet-name>
+        <servlet-class>Servlets.SituationFacture</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Paiement_facture</servlet-name>
+        <servlet-class>Servlets.Paiement_facture</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AjoutFacture</servlet-name>
+        <servlet-class>Servlets.AjoutFacture</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AjoutService</servlet-name>
+        <servlet-class>Servlets.AjoutService</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Detail</servlet-name>
+        <servlet-class>Servlets.Detail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>niveauEtude</servlet-name>
+        <servlet-class>Servlets.niveauEtude</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>specialiter</servlet-name>
+        <servlet-class>Servlets.specialiter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertionNiveauEtude</servlet-name>
+        <servlet-class>Servlets.InsertionNiveauEtude</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InsertionPoste</servlet-name>
+        <servlet-class>Servlets.InsertionPoste</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VersPoste</servlet-name>
+        <servlet-class>Servlets.VersPoste</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>NewServlet</servlet-name>
         <url-pattern>/NewServlet</url-pattern>
@@ -203,6 +255,58 @@
     <servlet-mapping>
         <servlet-name>ChoixMateriel</servlet-name>
         <url-pattern>/ChoixMateriel</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Trait_Service</servlet-name>
+        <url-pattern>/Trait_Service</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Facture_Service</servlet-name>
+        <url-pattern>/Facture_Service</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Situation</servlet-name>
+        <url-pattern>/Situation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SituationFacture</servlet-name>
+        <url-pattern>/SituationFacture</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Paiement_facture</servlet-name>
+        <url-pattern>/Paiement_facture</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AjoutFacture</servlet-name>
+        <url-pattern>/AjoutFacture</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AjoutService</servlet-name>
+        <url-pattern>/AjoutService</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Detail</servlet-name>
+        <url-pattern>/Detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>niveauEtude</servlet-name>
+        <url-pattern>/niveauEtude</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>specialiter</servlet-name>
+        <url-pattern>/specialiter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertionNiveauEtude</servlet-name>
+        <url-pattern>/InsertionNiveauEtude</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsertionPoste</servlet-name>
+        <url-pattern>/InsertionPoste</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VersPoste</servlet-name>
+        <url-pattern>/VersPoste</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

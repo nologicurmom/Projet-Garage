@@ -19,6 +19,39 @@ public class Marge extends Mere{
     private float prixMin;
     private float prixMax;
     private float pourcentage;
+
+    public int getIdMarge() {
+        return idMarge;
+    }
+
+    public void setIdMarge(int idMarge) {
+        this.idMarge = idMarge;
+    }
+
+    public float getPrixMin() {
+        return prixMin;
+    }
+
+    public void setPrixMin(float prixMin) {
+        this.prixMin = prixMin;
+    }
+
+    public float getPrixMax() {
+        return prixMax;
+    }
+
+    public void setPrixMax(float prixMax) {
+        this.prixMax = prixMax;
+    }
+
+    public float getPourcentage() {
+        return pourcentage;
+    }
+
+    public void setPourcentage(float pourcentage) {
+        this.pourcentage = pourcentage;
+    }
+    
     
     
     public float getPourcentage(float prix) throws SQLException

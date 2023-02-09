@@ -84,16 +84,57 @@ String Genre=null;
               <div class="d-flex  py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                  
-                  <span class="badge border-success text-info">Bienvenue</span>
+                  <span class="badge border-success text-info">Insertion Employer</span>
                 </a>
               </div><!--    <img src="assets/img/pngegg (3).png" width="40" height="40" alt="">-->
 
               <div class="card mb-3">
-                      <a href="InsertionEmploye.jsp">Vers insertion employe</a>
-                      <a href="InsertionNiveauEtude">insertion niveau etude et specialiter employe</a>
-                      <a href="VersPoste">Définir une poste pour un employe</a>
-                      <a href="Choix.jsp">Vers page choisir produit</a>
-                      <a href="ServiceClient.jsp">Vers page generer facture</a>
+                    <form action="InsertionEmploye" method="post" class="row g-3 needs-validation" novalidate>
+                    <div class="col-12">
+                       
+                        <h4> <label for="yourName" class="badge border-success border-1 text-info">Nom</label></h4>
+                        <input type="text" name="nom" class="form-control" required id="Nom"<% if(Nom!=null) {  %>value=<%out.println(Nom); }%>></input>
+                      <div class="invalid-feedback">Entrer un nom!</div>
+                    </div>
+
+                    <div class="col-12">
+                        <h4> <label for="yourName" class="badge border-success border-1 text-info">Prenom</label></h4>
+                      <input type="text" name="prenom" class="form-control" required id="Prenom" >
+                      <div class="invalid-feedback">Entrer un prenom </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h4> <label for="yourName" class="badge border-success border-1 text-info">Genre</label></h4>
+                      <div class="input-group has-validation">
+                       <select name="id_genre" class="form-select" required id="Genre" >
+                       <option value="">Genre</option>
+                       <option value="1">Masculin</option>
+                       <option value="2">Feminin</option>
+
+              </select>
+                        <div class="invalid-feedback">Entrer un genre</div>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                        <h4> <label for="yourName" class="badge border-success border-1 text-info">Date_de_naissance</label></h4>
+                      <input type="date" name="date_naissance" class="form-control" id="Date_de_naissance" required>
+                      <div class="invalid-feedback">Entrer une Date_de_naissance!</div>
+                    </div>
+            </div>                
+                    </div>
+                    <div class="col-6">
+                      <button class="btn  rounded-pill btn-dark w-100" type="submit"><h4> <label for="yourName" class="badge  text-info">Enregistrer</label></h4>
+</button>
+                    </div>
+                               </form>
+                         <%
+                     if (null!=request.getParameter("error")) 
+                     {
+                            out.println("il faut avoir plus de 18 ans");
+                     }
+                            %>
+                            
                 </div>
               </div>
           </div>
